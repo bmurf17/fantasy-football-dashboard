@@ -11,9 +11,12 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { GridLayoutComponent } from './grid-layout/grid-layout.component';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { TeamTileComponent } from './team-tile/team-tile.component';
+import { AppRoutingModule } from './app-routing.module';
+import { TeamPageComponent } from './team-page/team-page.component';
 
 @NgModule({
-  declarations: [AppComponent, GridLayoutComponent],
+  declarations: [AppComponent, GridLayoutComponent, TeamTileComponent, TeamPageComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -23,6 +26,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
     MatToolbarModule,
     MatButtonModule,
     MatGridListModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

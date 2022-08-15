@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 export interface Tile {
-  color: string;
   cols: number;
   rows: number;
-  text: string;
+  name: string;
+  record: string;
+  path: string;
 }
 
 @Component({
@@ -16,9 +17,9 @@ export class GridLayoutComponent implements OnInit {
   constructor() {}
 
   tiles: Tile[] = [
-    { text: 'Team One ', cols: 2, rows: 1, color: 'lightblue' },
-    { text: 'Team Two', cols: 2, rows: 1, color: 'lightgreen' },
-    { text: 'Team Three', cols: 2, rows: 1, color: 'lightpink' },
+    { name: "Tyler's League ", path: 'tyler', record: '0-0', cols: 2, rows: 1 },
+    { name: "Dad's Leage", path: 'dad', record: '0-0', cols: 2, rows: 1 },
+    { name: 'Family League', path: 'family', record: '0-0', cols: 2, rows: 1 },
   ];
 
   ngOnInit(): void {}

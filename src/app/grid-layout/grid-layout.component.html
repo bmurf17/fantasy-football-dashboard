@@ -3,8 +3,7 @@
     *ngFor="let tile of tiles"
     [colspan]="tile.cols"
     [rowspan]="tile.rows"
-    [style.background]="tile.color"
   >
-    {{ tile.text }}
+  <app-team-tile [teamName]="tile.name" [teamRecord]="tile.record"></app-team-tile>
   </mat-grid-tile>
 </mat-grid-list>
