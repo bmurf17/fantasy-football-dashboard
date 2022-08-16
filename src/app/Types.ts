@@ -1,4 +1,4 @@
-export interface Tile {
+export interface Team {
   id: number;
   cols: number;
   rows: number;

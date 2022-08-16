@@ -1,9 +1,9 @@
-import { Tile } from './Types';
+import { Team } from './Types';
 
-export const TEAMS: Tile[] = [
+export const TEAMS: Team[] = [
   {
     id: 1,
-    name: "Tyler's League ",
+    name: "Tyler's League",
     path: 'tyler',
     record: '0-0',
     cols: 2,

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { TEAMS } from '../mock-data';
+import { TeamService } from '../services/team.service';
+import { Team } from '../Types';
 
 @Component({
   selector: 'app-grid-layout',
@@ -7,9 +8,14 @@ import { TEAMS } from '../mock-data';
   styleUrls: ['./grid-layout.component.css'],
 })
 export class GridLayoutComponent implements OnInit {
-  constructor() {}
+  teams: Team[] = [];
 
-  tiles = TEAMS;
+  constructor(private teamService: TeamService) {}
+  getTeams(): void {
+    this.teamService.getTeams().subscribe((teams) => (this.teams = teams));
+  }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.getTeams();
+  }
 }
