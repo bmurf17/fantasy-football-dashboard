@@ -18,4 +18,12 @@ export const TEAMS: Team[] = [
     cols: 2,
     rows: 1,
   },
+  {
+    id: 4,
+    name: 'Connor Dynasty League',
+    path: 'dynasty',
+    record: '0-0',
+    cols: 2,
+    rows: 1,
+  },
 ];

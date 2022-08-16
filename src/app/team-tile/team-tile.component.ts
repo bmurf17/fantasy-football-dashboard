@@ -8,6 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class TeamTileComponent implements OnInit {
   @Input() teamName: string;
   @Input() teamRecord: string;
+  @Input() teamId: string;
 
   constructor() {}
 

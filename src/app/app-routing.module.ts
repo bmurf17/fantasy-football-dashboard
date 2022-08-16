@@ -5,7 +5,7 @@ import { TeamPageComponent } from './team-page/team-page.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', component: GridLayoutComponent },
-  { path: 'tyler', component: TeamPageComponent },
+  { path: 'team/:id', component: TeamPageComponent },
 ];
 
 @NgModule({
