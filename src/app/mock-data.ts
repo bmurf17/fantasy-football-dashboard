@@ -1,0 +1,21 @@
+import { Tile } from './Types';
+
+export const TEAMS: Tile[] = [
+  {
+    id: 1,
+    name: "Tyler's League ",
+    path: 'tyler',
+    record: '0-0',
+    cols: 2,
+    rows: 1,
+  },
+  { id: 2, name: "Dad's Leage", path: 'dad', record: '0-0', cols: 2, rows: 1 },
+  {
+    id: 3,
+    name: 'Family League',
+    path: 'family',
+    record: '0-0',
+    cols: 2,
+    rows: 1,
+  },
+];
