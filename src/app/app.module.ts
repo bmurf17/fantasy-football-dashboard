@@ -8,7 +8,9 @@ import { MatSliderModule } from '@angular/material/slider';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatListModule } from '@angular/material/list';
 import { MatButtonModule } from '@angular/material/button';
+import { MatTableModule } from '@angular/material/table';
 import { GridLayoutComponent } from './grid-layout/grid-layout.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { TeamTileComponent } from './team-tile/team-tile.component';
@@ -16,7 +18,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { TeamPageComponent } from './team-page/team-page.component';
 
 @NgModule({
-  declarations: [AppComponent, GridLayoutComponent, TeamTileComponent, TeamPageComponent],
+  declarations: [
+    AppComponent,
+    GridLayoutComponent,
+    TeamTileComponent,
+    TeamPageComponent,
+  ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -27,6 +34,8 @@ import { TeamPageComponent } from './team-page/team-page.component';
     MatButtonModule,
     MatGridListModule,
     AppRoutingModule,
+    MatListModule,
+    MatTableModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

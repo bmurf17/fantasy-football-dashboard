@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { TeamService } from '../services/team.service';
-import { Team } from '../Types';
+import { Player, Team } from '../Types';
 
 @Component({
   selector: 'app-team-page',
@@ -10,6 +10,8 @@ import { Team } from '../Types';
 })
 export class TeamPageComponent implements OnInit {
   team: Team | undefined;
+  players: Player[] | undefined;
+  displayedColumns: string[] = ['name', 'nflTeam', 'position'];
 
   constructor(
     private route: ActivatedRoute,
@@ -23,5 +25,6 @@ export class TeamPageComponent implements OnInit {
   getHero(): void {
     const id = Number(this.route.snapshot.paramMap.get('id'));
     this.teamService.getTeamById(id).subscribe((team) => (this.team = team));
+    this.players = this.team.players;
   }
 }
