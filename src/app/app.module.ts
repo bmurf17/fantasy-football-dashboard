@@ -16,6 +16,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { TeamTileComponent } from './team-tile/team-tile.component';
 import { AppRoutingModule } from './app-routing.module';
 import { TeamPageComponent } from './team-page/team-page.component';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { TeamPageComponent } from './team-page/team-page.component';
     AppRoutingModule,
     MatListModule,
     MatTableModule,
+    MatSidenavModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
