@@ -1,9 +1,8 @@
+import { AppComponent } from './app.component';
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
 import { MatSliderModule } from '@angular/material/slider';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
@@ -13,10 +12,12 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatTableModule } from '@angular/material/table';
 import { GridLayoutComponent } from './grid-layout/grid-layout.component';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { HttpClientModule } from '@angular/common/http';
+
 import { TeamTileComponent } from './team-tile/team-tile.component';
 import { AppRoutingModule } from './app-routing.module';
 import { TeamPageComponent } from './team-page/team-page.component';
-import { MatSidenavModule } from '@angular/material/sidenav';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     MatListModule,
     MatTableModule,
     MatSidenavModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
