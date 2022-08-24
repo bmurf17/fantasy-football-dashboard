@@ -15,9 +15,9 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { HttpClientModule } from '@angular/common/http';
 
-import { TeamTileComponent } from './team-tile/team-tile.component';
+import { TeamTileComponent } from './Team/team-tile/team-tile.component';
 import { AppRoutingModule } from './app-routing.module';
-import { TeamPageComponent } from './team-page/team-page.component';
+import { TeamPageComponent } from './Team/team-page/team-page.component';
 
 @NgModule({
   declarations: [

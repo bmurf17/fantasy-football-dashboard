@@ -1,5 +1,5 @@
 <h1 class="center mat-display-3">My Teams</h1>
-<mat-grid-list cols="8" rowHeight="100px">
+<mat-grid-list cols="{{columns}}" rowHeight="100px">
   <mat-grid-tile
     *ngFor="let team of teams"
     [colspan]="team.cols"
@@ -8,3 +8,4 @@
   <app-team-tile [teamName]="team.name" [teamRecord]="team.record" [teamId]="team.id"></app-team-tile>
   </mat-grid-tile>
 </mat-grid-list>
+

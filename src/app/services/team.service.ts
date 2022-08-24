@@ -10,12 +10,16 @@ import { TEAMS } from '../mock-data';
 export class TeamService {
   constructor(private http: HttpClient) {}
   private teamsUrl = 'https://localhost:7061/api/Team';
+  private teams: Observable<Team[]>;
 
   getTeams(): Observable<Team[]> {
-    return this.http.get<Team[]>(this.teamsUrl);
+    this.teams = this.http.get<Team[]>(this.teamsUrl) 
+    return this.teams;
   }
 
   getTeamById(id: number): Observable<Team> {
+    const sub = this.teams.subscribe();
+
     const team = TEAMS.find((team) => team.id === id)!;
     return of(team);
   }
